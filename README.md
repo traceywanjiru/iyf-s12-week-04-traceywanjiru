@@ -12,23 +12,23 @@ A comprehensive collection of JavaScript fundamental exercises and a core mini-p
 
 ## Technologies Used
 
-- VS Code (Development Environment)
-- Node.js (for terminal execution)
-- JavaScript(ES6+)
+1. VS Code (Development Environment)
+2. Node.js (for terminal execution)
+3. JavaScript(ES6+)
 
 ## Features
 
--Student Registration & Management: Add new student profiles paired with custom subject-specific grade objects.
+1. Student Registration & Management: Add new student profiles paired with custom subject-specific grade objects.
 
--Dynamic Lookups & Analytics: Retrieve student records case-insensitively, compute individual student averages, and calculate class-wide subject averages.
+2. Dynamic Lookups & Analytics: Retrieve student records case-insensitively, compute individual student averages, and calculate class-wide subject averages.
 
--Performance Evaluation: Automatically identify top-performing students and filter out struggling students (overall average below 70%).
+3. Performance Evaluation: Automatically identify top-performing students and filter out struggling students (overall average below 70%).
 
--Automated Report Cards: Generate clean, formatted report cards translating numerical scores into standard letter grades (A–F).
+4. Automated Report Cards: Generate clean, formatted report cards translating numerical scores into standard letter grades (A–F).
 
--JSON Data Processing: Parse, filter, sort, and re-stringify JSON strings representing application posts and data safely with `try/catch` error handling.
+5. JSON Data Processing: Parse, filter, sort, and re-stringify JSON strings representing application posts and data safely with `try/catch` error handling.
 
--Daily Coding Challenges: Complete implementations for FizzBuzz, string reversal, largest number calculation, duplicate removal with `Set and filter`, and case/space-insensitive palindrome checking.
+6. Daily Coding Challenges: Complete implementations for FizzBuzz, string reversal, largest number calculation, duplicate removal with `Set and filter`, and case/space-insensitive palindrome checking.
 
 ## How to Run
 
@@ -52,19 +52,19 @@ node grade-tracker.js
 
 ## Challenges Faced
 
-### Floating-Point Precision in Averages:
+### 1. Floating-Point Precision in Averages:
 
 Problem: Calculating averages often produced long, repeating decimals (`e.g., 91.66666666666667`), which compromised readability on report cards.
 
 Solution: Utilized `.toFixed(2)` combined with `Number(...)` to format numerical outputs cleanly to two decimal places.
 
-### Case Sensitivity in Record Lookups:
+### 2. Case Sensitivity in Record Lookups:
 
 Problem: Strict string comparisons caused student searches to fail if the user's casing didn't match stored records (e.g., searching `"alice"` vs `"Alice"`).
 
 Solution: Normalized both search queries and database keys using `.toLowerCase()` inside helper methods to ensure robust, flexible lookups.
 
-### Handling Missing Subject Data:
+### 3. Handling Missing Subject Data:
 
 Problem: Computing class averages for specific subjects risked returning inaccurate math or throwing errors if certain students weren't enrolled in or assigned that subject.
 
